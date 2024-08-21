@@ -39,7 +39,7 @@ def handle_logging(args):
             f" -- must be one of: {' | '.join(levels.keys())}"
         )
     LOG_FORMAT = "%(asctime)s:%(levelname)s:%(name)s: %(message)s"
-    logging.basicConfig(level=logging.DEBUG, format=LOG_FORMAT)
+    logging.basicConfig(level=level, format=LOG_FORMAT)
 
 
 if __name__ == "__main__":
